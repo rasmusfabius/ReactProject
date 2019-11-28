@@ -1,5 +1,5 @@
-const OMDBGETimdbID = async imdbID => {
-  let URL = 'https://www.omdbapi.com/?apikey=1fc41d7c&i='.concat(imdbID);
+const OMDBGETSearch = async searchQuery => {
+  let URL = 'https://www.omdbapi.com/?apikey=251ff3f5&s='.concat(searchQuery);
   try {
     let response = await fetch(URL, {
       method: 'GET'
@@ -12,4 +12,4 @@ const OMDBGETimdbID = async imdbID => {
   }
 };
 
-export default OMDBGETimdbID;
+export default OMDBGETSearch;

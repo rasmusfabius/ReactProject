@@ -11,7 +11,7 @@ class NavBar extends Component {
   };
   render() {
     return (
-      <nav className='navbar fixed-top navbar-expand-sm navbar-dark bg-dark'>
+      <nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
         <Link to='/'>
           <div className='navbar-brand' data-toggle='collapse' data-target='.navbar-collapse.show'>
             CARLITO MovieDB

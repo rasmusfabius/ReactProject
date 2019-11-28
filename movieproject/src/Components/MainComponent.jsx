@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NavBar from './NavBarComponent';
 import Footer from './FooterComponent';
+import InTheater from './InTheater';
+import MovieDetail from './MovieDetail';
 
 export const MainComponent = () => {
   return (
@@ -9,7 +11,10 @@ export const MainComponent = () => {
       <Router>
         <NavBar />
         <div className='container-fluid'>
-          <div className='container'></div>
+          <div className='container'>
+            <Route path='/movie-detail/:movieId' component={MovieDetail} />
+            <Route path='/movies-in-theater' component={InTheater} />
+          </div>
         </div>
         <Footer />
       </Router>
