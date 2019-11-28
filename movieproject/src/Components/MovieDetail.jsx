@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import OMDBGETimdbID from '../API/OMDB-GET-imdbID';
+import MovieComments from './MovieComments';
 
 class MovieDetail extends Component {
   state = {
@@ -40,7 +41,9 @@ class MovieDetail extends Component {
             </ul>
           </div>
 
-          <div className='col-md-4 p-2'>{/* <MovieComments movieID={movie.imdbID} />  */}</div>
+          <div className='col-md-4 p-2'>
+            <MovieComments movieID={movie.imdbID} />
+          </div>
         </div>
       );
     }
